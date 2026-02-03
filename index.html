@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="SkillSprint — Professional website design and development to help your business grow online. Clean, responsive websites and reliable support." />
+  <title>SkillSprint — Web Design & Development</title>
+
+  <!-- Styles -->
+<link rel="stylesheet" href="style.css" />
+
+  <!-- Prefers color-scheme support and set theme-color for mobile browsers -->
+  <meta name="theme-color" content="#0b6dfd" />
+
+  <!-- Preconnect & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="SkillSprint — Web Design & Development">
+  <meta property="og:description" content="Professional website design and development to help your business grow online.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@SkillSprint">
+
+  <!-- JSON-LD organization data -->
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"SkillSprint","url":"https://skillsprint.example","logo":"https://skillsprint.example/assets/logo.png","contactPoint":[{"@type":"ContactPoint","telephone":"+27787204032","contactType":"customer service","email":"joshuaengle08@gmail.com"}],"sameAs":["https://www.facebook.com/","https://www.linkedin.com/"]}</script>
+
+  <!-- Google Analytics (replace G-XXXXXXX with your GA4 ID) -->
+  <script>window.GA_ID = 'G-XXXXXXX';</script>
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="SkillSprint home">SkillSprint</a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">🌙</button>
+      <nav id="primary-navigation" class="primary-nav" role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cookie / Analytics consent banner -->
+  <div id="consentBanner" class="consent-banner" role="dialog" aria-live="polite" aria-label="Analytics consent" hidden>
+    <div class="container consent-inner">
+      <p>We use analytics to improve the site. By accepting, you allow anonymous tracking to help us make SkillSprint better.</p>
+      <div class="consent-actions">
+        <button id="acceptAnalytics" class="btn primary">Accept</button>
+        <button id="rejectAnalytics" class="btn ghost">Decline</button>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1 class="hero-title">Launch a professional website that drives results</h1>
+          <p class="hero-sub">Beautiful, responsive websites built for performance and conversions. Fast turnaround, transparent pricing, and ongoing support.</p>
+          <div class="hero-ctas">
+            <a class="btn primary" href="contact.html">Get Your Website</a>
+            <a class="btn ghost" href="portfolio.html">See Our Work</a>
+          </div>
+
+          <div class="trusted-by" aria-hidden="true">
+            <span>Trusted by</span>
+            <div class="trusted-logos">
+              <img src="assets/project-1.svg" alt="Client 1" width="80" height="28" loading="lazy" />
+              <img src="assets/project-2.svg" alt="Client 2" width="80" height="28" loading="lazy" />
+              <img src="assets/project-3.svg" alt="Client 3" width="80" height="28" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Simple SVG illustration placeholder -->
+          <svg width="480" height="320" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+            <rect x="10" y="10" width="460" height="300" rx="12" fill="#eff6ff" />
+            <rect x="36" y="36" width="408" height="44" rx="6" fill="#fff" />
+            <rect x="36" y="98" width="408" height="172" rx="6" fill="#fff" />
+            <circle cx="66" cy="60" r="6" fill="#0b6dfd" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="section-lead">Full-service web design & development tailored for small businesses and startups.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Website Design</h3>
+            <p>Custom UI/UX focusing on clarity and conversion-centered layouts.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website Development</h3>
+            <p>Clean, semantic code and fast performance using modern standards.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website Redesign</h3>
+            <p>Refresh your brand and improve usability for better results.</p>
+          </article>
+          <article class="service-card">
+            <h3>Mobile Responsiveness</h3>
+            <p>Mobile-first approach to ensure seamless experiences across devices.</p>
+          </article>
+          <article class="service-card">
+            <h3>SEO Basics</h3>
+            <p>On-page SEO, metadata, accessibility, and performance best practices.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website Maintenance</h3>
+            <p>Hosting, updates, security, backups, and reliable support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section pricing">
+      <div class="container">
+        <h2 class="section-title">Pricing</h2>
+        <p class="section-lead">Simple, transparent pricing with options to scale as you grow.</p>
+        <div class="pricing-grid">
+          <div class="price-card recommended">
+            <div class="price-header">
+              <h3>Starter Website</h3>
+              <p class="price">R2,500 <span>/ $150</span></p>
+            </div>
+            <ul>
+              <li>Custom design & development</li>
+              <li>Up to 5 pages</li>
+              <li>Responsive layout</li>
+              <li>Publishing & launch</li>
+            </ul>
+            <a class="btn primary" href="#contact">Choose Starter</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-header">
+              <h3>Maintenance Plan</h3>
+              <p class="price">R250 <span>/ $15</span> <small>/ month</small></p>
+            </div>
+            <ul>
+              <li>Hosting & uptime</li>
+              <li>Security updates</li>
+              <li>Backups & support</li>
+            </ul>
+            <a class="btn" href="#contact">Subscribe</a>
+          </div>
+
+          <div class="price-card">
+            <div class="price-header">
+              <h3>Add-Ons</h3>
+              <p class="price">E-commerce, branding, and more</p>
+            </div>
+            <ul>
+              <li>E-commerce setup</li>
+              <li>Custom features</li>
+              <li>Branding & content writing</li>
+            </ul>
+            <a class="btn" href="#contact">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h2 class="section-title">Portfolio</h2>
+        <p class="section-lead">Selected projects (placeholders).</p>
+        <div class="portfolio-grid">
+          <!-- Placeholder cards with lazy loaded images -->
+          <article class="portfolio-card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i400IiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2VlZWVlZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUw" alt="Project placeholder" loading="lazy" width="400" height="300" />
+            <div class="portfolio-meta">
+              <h4>Project Title</h4>
+              <p>Short description of the project.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i400IiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2VlZWVlZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUw" alt="Project placeholder" loading="lazy" width="400" height="300" />
+            <div class="portfolio-meta">
+              <h4>Project Title</h4>
+              <p>Short description of the project.</p>
+            </div>
+          </article>
+
+          <article class="portfolio-card">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0i400IiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2VlZWVlZSIvPjx0ZXh0IHg9IjIwMCIgeT0iMTUw" alt="Project placeholder" loading="lazy" width="400" height="300" />
+            <div class="portfolio-meta">
+              <h4>Project Title</h4>
+              <p>Short description of the project.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" aria-label="Testimonials">
+      <div class="container">
+        <h2 class="section-title">What clients say</h2>
+        <div class="testimonials-slider" id="testimonials">
+          <blockquote class="testimonial">“SkillSprint built our site quickly and it brought measurable sales within the first month.”<cite>— Client A</cite></blockquote>
+          <blockquote class="testimonial">“Professional, responsive, and great attention to detail.”<cite>— Client B</cite></blockquote>
+          <blockquote class="testimonial">“They helped us migrate and improved performance dramatically.”<cite>— Client C</cite></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div>
+          <h2 class="section-title">About SkillSprint</h2>
+          <p class="section-lead">We help businesses grow online with professional websites designed to convert. Our approach is friendly, transparent, and focused on results.</p>
+          <p>Founded with a passion for clean design and measurable outcomes, SkillSprint delivers websites that combine aesthetics, performance, and usability. We partner with clients to ensure their site continues to evolve after launch.</p>
+        </div>
+        <div class="about-cta">
+          <h3>Ready to start?</h3>
+          <a class="btn primary" href="contact.html">Get a free quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-lead">Get in touch to discuss your project or request a quote.</p>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate data-formspree-endpoint="https://formspree.io/f/xzdvqwvd" action="https://formspree.io/f/xzdvqwvd" method="POST">
+            <!-- Form is configured to send to Formspree endpoint: https://formspree.io/f/xzdvqwvd -->
+            <input type="hidden" name="_subject" value="New contact from SkillSprint website" />
+            <input type="hidden" name="_language" value="en" />
+            <input type="hidden" name="_replyto" id="replytoHidden" />
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="0787204032" required />
+            </div>
+            <div class="form-row">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option>Website Design</option>
+                <option>Website Development</option>
+                <option>Redesign</option>
+                <option>Maintenance</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+            </div>
+
+            <div class="form-row form-actions">
+              <input type="text" name="_gotcha" id="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+              <button type="submit" class="btn primary"><span class="btn-text">Send Message</span><span class="btn-loader hidden" aria-hidden="true"></span></button>
+              <div class="form-note">Or call <a href="tel:+27787204032">0787204032</a> • Email <a href="mailto:joshuaengle08@gmail.com">joshuaengle08@gmail.com</a></div>
+            </div>
+
+            <div id="formMessage" role="status" aria-live="polite" class="form-message" hidden></div>
+          </form>
+
+          <aside class="contact-details" aria-label="Contact details">
+            <h3>Get in touch</h3>
+            <ul>
+              <li><strong>Phone:</strong> <a href="tel:+27787204032">0787204032</a></li>
+              <li><strong>Email:</strong> <a href="mailto:joshuaengle08@gmail.com">joshuaengle08@gmail.com</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/27787204032" target="_blank" rel="noopener">0787204032</a></li>
+            </ul>
+            <p>Hours: Mon–Fri, 9am–5pm</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay" data-dismiss="modal"></div>
+    <div class="modal-content" role="document">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <h3>Message sent</h3>
+        <p>Thanks! We’ve received your message and will get back to you shortly.</p>
+        <button class="btn primary modal-ok">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal -->
+  <div id="portfolioModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-overlay" data-dismiss="modal"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-body" id="portfolioModalBody">
+        <!-- Filled dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- AI Chat Widget -->
+  <div id="chatWidget" class="chat-widget" aria-hidden="true" aria-live="polite" data-chat-endpoint="/api/chat">
+    <button class="chat-fab" id="chatToggle" aria-label="Open chat">💬</button>
+    <div class="chat-panel" role="dialog" aria-labelledby="chatTitle">
+      <div class="chat-header">
+        <h3 id="chatTitle">Ask SkillSprint</h3>
+        <button class="chat-close" aria-label="Close chat">×</button>
+      </div>
+      <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+      <form class="chat-form" id="chatForm">
+        <input type="text" id="chatInput" name="message" placeholder="Ask questions about our services, pricing, or process" autocomplete="off" required />
+        <button type="submit" class="btn primary">Send</button>
+      </form>
+      <div class="chat-note">Powered by AI — privacy first. See our <a href="#contact">contact page</a> for details.</div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp button -->
+  <a class="whatsapp-fab" href="https://wa.me/27787204032" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false">
+      <path fill="#fff" d="M20.52 3.48A11.88 11.88 0 0012 .5C6.21.5 1.5 5.2 1.5 11c0 1.95.5 3.86 1.44 5.57L0.5 23.5l6.2-1.56A11.93 11.93 0 0012 22.5c5.79 0 10.5-4.7 10.5-10.5 0-3-1.22-5.73-3.98-7.52z" />
+      <path fill="#25D366" d="M17.5 14.1c-.3-.15-1.76-.87-2.03-.98-.27-.1-.47-.15-.67.15-.2.3-.77.98-.95 1.18-.17.2-.33.22-.6.08a8.73 8.73 0 01-2.6-1.6 9.09 9.09 0 01-1.68-2c-.18-.3 0-.46.13-.6.13-.13.3-.3.45-.5.16-.2.2-.35.3-.6.1-.25 0-.45-.02-.6-.02-.15-.67-1.58-.92-2.17-.24-.57-.49-.48-.67-.48h-.58c-.2 0-.52.07-.8.35-.28.28-1.06 1.03-1.06 2.5 0 1.47 1.08 2.89 1.23 3.09.15.2 2.12 3.4 5.14 4.77 3.02 1.37 3.02.92 3.57.86.55-.07 1.76-.72 2.01-1.42.25-.7.25-1.3.17-1.42-.08-.13-.29-.2-.6-.35z"/>
+    </svg>
+  </a>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SkillSprint. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

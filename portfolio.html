@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — SkillSprint</title>
+  <meta name="description" content="Selected projects and past work examples." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SkillSprint</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">🌙</button>
+      <nav class="primary-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section portfolio">
+      <div class="container">
+        <h1 class="section-title">Portfolio</h1>
+        <p class="section-lead">Selected projects (placeholders).</p>
+        <div class="filter-bar" aria-hidden="false">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+          <button class="filter-btn" data-filter="brand">Brand</button>
+          <button class="filter-btn" data-filter="saas">SaaS</button>
+        </div>
+
+        <div class="portfolio-grid" id="portfolioGrid">
+          <article class="portfolio-card" data-category="ecommerce">
+            <figure>
+              <a href="project-1.html" class="portfolio-link" data-title="E-commerce site"><img src="assets/project-1.svg" alt="E-commerce project" loading="lazy" width="400" height="300" /></a>
+              <figcaption class="portfolio-meta">
+                <h4><a href="project-1.html">E-commerce site</a></h4>
+                <p>Responsive online store with cart, checkout, and conversion optimization.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="portfolio-card" data-category="brand">
+            <figure>
+              <a href="project-2.html" class="portfolio-link" data-title="Brand & Website"><img src="assets/project-2.svg" alt="Brand project" loading="lazy" width="400" height="300" /></a>
+              <figcaption class="portfolio-meta">
+                <h4><a href="project-2.html">Brand & Website</a></h4>
+                <p>Complete brand refresh with a modern, accessible site to match the identity.</p>
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="portfolio-card" data-category="saas">
+            <figure>
+              <a href="project-3.html" class="portfolio-link" data-title="SaaS Landing"><img src="assets/project-3.svg" alt="SaaS project" loading="lazy" width="400" height="300" /></a>
+              <figcaption class="portfolio-meta">
+                <h4><a href="project-3.html">SaaS Landing</a></h4>
+                <p>High-converting landing pages, clear pricing and signup flow.</p>
+              </figcaption>
+            </figure>
+          </article>
+        </div>
+
+        <!-- Lightbox modal for portfolio images -->
+        <div id="lightbox" class="lightbox" aria-hidden="true">
+          <div class="lightbox-overlay" data-dismiss="lightbox"></div>
+          <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close">×</button>
+            <img id="lightboxImg" src="" alt="" />
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SkillSprint. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
