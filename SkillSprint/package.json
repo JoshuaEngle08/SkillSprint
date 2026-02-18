@@ -1,0 +1,14 @@
+{
+  "name": "skillsprint-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.js",
+    "start-server": "node server/index.js"
+  },
+  "devDependencies": {
+    "csso": "^5.0.0",
+    "terser": "^5.17.0",
+    "fs-extra": "^11.1.1"
+  }
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Contact SkillSprint — phone, email, WhatsApp, or send us a message." />
+  <title>Contact — SkillSprint</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b6dfd" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V5WF3YGTKY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V5WF3YGTKY');
+  </script>
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SkillSprint</a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact">
+      <div class="container">
+        <h1 class="section-title">Contact</h1>
+        <p class="section-lead">Get in touch to discuss your project or request a quote.</p>
+        <div class="contact-grid">
+          <form id="contactForm" class="contact-form" novalidate data-formspree-endpoint="https://formspree.io/f/xzdvqwvd" action="https://formspree.io/f/xzdvqwvd" method="POST">
+            <input type="hidden" name="_subject" value="New contact from SkillSprint website" />
+            <input type="hidden" name="_language" value="en" />
+            <input type="hidden" name="_replyto" id="replytoHidden" />
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="0787204032" required />
+            </div>
+            <div class="form-row">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option>Website Design</option>
+                <option>Website Development</option>
+                <option>Redesign</option>
+                <option>Maintenance</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+            </div>
+
+            <div class="form-row form-actions">
+              <input type="text" name="_gotcha" id="_gotcha" class="hidden" tabindex="-1" autocomplete="off" />
+              <button type="submit" class="btn primary"><span class="btn-text">Send Message</span><span class="btn-loader hidden" aria-hidden="true"></span></button>
+              <div class="form-note">Or call <a href="tel:+27787204032">0787204032</a> • Email <a href="mailto:joshuaengle08@gmail.com">joshuaengle08@gmail.com</a></div>
+            </div>
+
+            <div id="formMessage" role="status" aria-live="polite" class="form-message" hidden></div>
+          </form>
+
+          <aside class="contact-details" aria-label="Contact details">
+            <h3>Get in touch</h3>
+            <ul>
+              <li><strong>Phone:</strong> <a href="tel:+27787204032">0787204032</a></li>
+              <li><strong>Email:</strong> <a href="mailto:joshuaengle08@gmail.com">joshuaengle08@gmail.com</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/27787204032" target="_blank" rel="noopener">0787204032</a></li>
+            </ul>
+            <p>Hours: Mon–Fri, 9am–5pm</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SkillSprint. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "skillsprint-server",
+  "version": "1.0.0",
+  "description": "Simple server for SkillSprint chat proxy (OpenAI) and static site hosting for local dev.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7",
+    "express-rate-limit": "^6.7.0",
+    "dotenv": "^16.0.3"
+  }
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Services: Website design, development, redesign, mobile responsiveness, SEO basics, and maintenance." />
+  <title>Services — SkillSprint</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#0b6dfd" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V5WF3YGTKY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-V5WF3YGTKY');
+  </script>
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">SkillSprint</a>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-nav" role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section services">
+      <div class="container">
+        <h1 class="section-title">Our Services</h1>
+        <p class="section-lead">Full-service web design & development tailored for small businesses and startups.</p>
+        <div class="services-grid">
+          <article class="service-card">
+            <h3>Website Design</h3>
+            <p>Custom UI/UX focusing on clarity and conversion-centered layouts.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website Development</h3>
+            <p>Clean, semantic code and fast performance using modern standards.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website Redesign</h3>
+            <p>Refresh your brand and improve usability for better results.</p>
+          </article>
+          <article class="service-card">
+            <h3>Mobile Responsiveness</h3>
+            <p>Mobile-first approach to ensure seamless experiences across devices.</p>
+          </article>
+          <article class="service-card">
+            <h3>SEO Basics</h3>
+            <p>On-page SEO, metadata, accessibility, and performance best practices.</p>
+          </article>
+          <article class="service-card">
+            <h3>Website Maintenance</h3>
+            <p>Hosting, updates, security, backups, and reliable support.</p>
+          </article>
+        </div>
+        <p style="margin-top:1rem;"><a class="btn primary" href="contact.html">Request this service</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> SkillSprint. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
